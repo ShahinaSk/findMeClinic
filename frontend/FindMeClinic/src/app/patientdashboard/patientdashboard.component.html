@@ -1,0 +1,43 @@
+
+
+
+
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
+
+   <!-- Navbar brand -->
+   <mdb-navbar-brand> <a href="#" class="navbar-brand ml-3" style="color:rgb(33, 173, 228)">
+    <img src="../../assets/images/logo (1).png" style="height: 60px;width: auto;margin-left: 40px" alt ="FindMeClinic"/>
+</a></mdb-navbar-brand>
+
+   <!-- Collapsible content -->
+   <links>
+
+     <!-- Links -->
+     <ul class="navbar-nav ml-auto">
+         <li class="nav-item active">
+             <a class="nav-link waves-light" (click)="patientAppointments()" mdbWavesEffect>My Appointments<span class="sr-only">(current)</span></a>
+           </li>
+
+       <!-- Dropdown -->
+       <li class="nav-item dropdown" dropdown>
+         <a mdbWavesEffect type="button" (click)="patientProfile()" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+           <mdb-icon fas icon="user"></mdb-icon> Profile<span class="caret"></span></a>
+
+       </li>
+      
+       <li class="nav-item active">
+        <a class="nav-link waves-light" href="" mdbWavesEffect><i class="fa fa-sign-out"></i>Logout<span class="sr-only">(current)</span></a>
+      </li>
+
+
+     </ul>
+     <!-- Links -->
+   </links>
+   <!-- Collapsible content -->
+
+ </mdb-navbar>
+
+ <!--/.Navbar-->
+ <router-outlet></router-outlet>
+ <br>
+ <app-footer></app-footer>

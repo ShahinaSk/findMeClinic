@@ -1,0 +1,45 @@
+
+.container
+{
+    margin-top: 80px;
+   
+}
+.registerbackground
+{
+    background: #eff5f8;
+    margin-bottom: 10px;
+
+}
+h4{
+  color: #2fd5f8;
+}
+
+.btn{
+
+    background-color:#2fd5f8;
+    color: white;
+   
+}
+
+h3{
+    margin-top: 15px;
+    text-align: center;
+    color:#2fd5f8;
+
+}
+
+
+btn-primary{
+    text-align: center;
+}
+
+.field{
+    width:90%;
+    padding-left:10%;
+}
+
+.fields{
+    width:90%;
+    padding-left:5%;
+}
+

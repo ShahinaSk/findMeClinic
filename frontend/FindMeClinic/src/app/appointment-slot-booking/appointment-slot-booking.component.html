@@ -1,0 +1,108 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Cardo:400,400italic|Radley|Tangerine" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<div id="login">
+       
+        <div class="container">
+            
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-9">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+<section class="section-tours">
+        <div class=" text-center  u-margin-bottom-medium">
+            <br>  <br>  <h2 class="heading-secondary">
+               Choose And Book Now
+            </h2>
+            <br>  <br>
+        </div>
+
+<mat-tab-group>
+        <mat-tab label="Today"> 
+            
+                <div class="main-content">
+                <div class="container mt-7">
+                        <form class="outset">
+                            <h4>
+                                <mat-radio-group>
+                                    <mat-radio-button value="Today(10-1)"  [disabled]="status1" (click)="clickMe1('today','morning')" >10:00AM-01:00AM</mat-radio-button> <br>
+                                 <mat-radio-button value="Today(2-5)" [disabled]="status2" (click)="clickMe2('today','afternoon')">02:00PM-05:00PM</mat-radio-button> <br>
+                                    <mat-radio-button value="Today(6-9)"   [disabled]="status3" (click)="clickMe3('today','evening')">06:00PM-09:00PM</mat-radio-button> <br>
+                                  </mat-radio-group>
+                                  </h4>
+                                 
+                        </form>
+                </div>
+                </div>
+          
+        </mat-tab>        
+            
+         <mat-tab label="Tomorrow"> 
+           
+        <div class="main-content">
+        <div class="container mt-7">
+                <form class="outset">
+                    <h4>
+                        <mat-radio-group>
+                            <mat-radio-button value="Tomorrow(10-1)" [disabled]="status4" (click)="clickMe4('tommorow','morning')">10:00AM-01:00AM</mat-radio-button> <br>
+                            <mat-radio-button value="Tomorrow(2-5)"   [disabled]="status5" (click)="clickMe5('tommorow','afternoon')">02:00PM-05:00PM</mat-radio-button> <br>
+                            <mat-radio-button value="Tomorrow(6-9)"  [disabled]="status6" (click)="clickMe6('tommorow','evening')">06:00PM-09:00PM</mat-radio-button> <br>
+                          </mat-radio-group>
+                          </h4>
+                          
+             
+                </form>
+        </div>
+        </div>
+        </mat-tab>
+        <mat-tab label="Overmorrow"> 
+            
+               
+                <div class="main-content">
+                <div class="container mt-7">
+                        <form class="outset">
+                            <h4>
+                                <mat-radio-group>
+                                    <mat-radio-button value="Overmorrow(10-1)" [disabled]="status7" (click)="clickMe7('Overmorrow','morning')">10:00AM-01:00AM</mat-radio-button> <br>
+                                    <mat-radio-button value="Overmorrow(2-5)"   [disabled]="status8" (click)="clickMe8('Overmorrow','afternoon')">02:00PM-05:00PM</mat-radio-button> <br>
+                                    <mat-radio-button value="Overmorrow(6-9)"  [disabled]="status9" (click)="clickMe9('Overmorrow','evening')">06:00PM-09:00PM</mat-radio-button> <br>
+                                  </mat-radio-group>
+                                  </h4>
+                                
+                        </form>
+                </div>
+                </div>
+                </mat-tab>
+
+
+       
+      </mat-tab-group> 
+      <div class="row">
+            <div class="col-lg-12">
+                <a class="btn btn-primary" role="button" (click)="routingto()">Continue</a>
+            </div>
+        </div>
+
+      </section>
+    </form>
+</div>
+
+</div>
+
+</div>
+</div>
+     
+
+
+

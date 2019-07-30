@@ -1,0 +1,85 @@
+
+<!-- main app container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="heading">
+                    <h3>Sign Up</h3>
+                    <hr>
+                    </div>
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="field ">
+                        <label>Name</label>
+                        <input type="text" formControlName="firstName" class="form-control" #patientname [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                            <div *ngIf="f.firstName.errors.required"> Name is required</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <div class="field ">
+                        <label>Date Of Birth</label>
+                        <input type="date" formControlName="date" class="form-control" #date [ngClass]="{ 'is-invalid': submitted && f.date.errors }" />
+                        <div *ngIf="submitted && f.date.errors" class="invalid-feedback">
+                            <div *ngIf="f.date.errors.required">Date is required</div>
+                        </div>
+                        </div>
+                    </div>
+
+            
+                    <div class="form-group">
+                            <div class="field ">
+                        <label>Mobile</label>
+                        <input type="text" ng-pattern="/^\d{10,15}$/" formControlName="phone" class="form-control" #phone [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
+                        <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                            <div *ngIf="f.date.errors.required">Mobile Number should be 10 digit number only
+
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fields">
+                 <div class="custom-control custom-radio" style="margin-bottom: 10px">
+                        <label><input type="radio" formControlName="gender" value="Male"  [(ngModel)]="gender"/> Male</label> 
+                        <label><input type="radio" formControlName="gender" value="Female"  [(ngModel)]="gender" style="margin-left: 10px"/>Female</label>
+                    <div *ngIf="submitted && f.gender.errors" class="invalid-feedback">
+                        <div *ngIf="f.gender.errors.required">Gender is required</div>
+                    </div>
+                  </div>
+                 </div>
+                    <div class="form-group">
+                            <div class="field ">
+                        <label>Email</label>
+                        <input type="text" formControlName="email" #email class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                            <div *ngIf="f.email.errors.required">Email is required</div>
+                            <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <div class="field ">
+                        <label>Password</label>
+                        <input type="password" formControlName="password" #password class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                            <div *ngIf="f.password.errors.required">Password is required</div>
+                            <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+                        </div>
+                        </div>
+                    </div>
+                   
+                    <div class="form-group text-center">
+                        <button class="btn btn-primary " (click)="register(patientname.value,phone.value,email.value,date.value,password.value)">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

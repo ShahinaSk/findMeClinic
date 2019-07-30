@@ -1,0 +1,176 @@
+version: "2"
+services:
+
+  eurekaserver:
+    image: eureka-servcie:1.0.0
+    build: eureka-server/
+    restart: always
+    network_mode: host
+    ports:
+      - 8084:8084
+    expose:
+      - 8084
+
+  zuulgateway:
+    image: zuul-service:1.0.0
+    build: zuul-api/
+    restart: always
+    network_mode: host
+    depends_on:
+      - eurekaserver
+    ports:
+      - 8083:8083
+    expose:
+      - 8083
+
+
+  configserver:
+    image: config-server:1.0.0
+    build: config-server/
+    restart: always
+    network_mode: host
+    depends_on:
+      - eurekaserver
+    ports:
+      - 8085:8085
+    expose:
+      - 8085
+
+  zookeeper:
+    container_name: zookeeper
+    image: wurstmeister/zookeeper:latest
+
+    ports:
+      - 2181:2181
+    expose:
+      - 2181
+    network_mode: "host"
+    hostname: localhost
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000000000
+
+  kafka:
+    container_name: kafka
+    image: wurstmeister/kafka:latest
+
+    ports:
+      - 9092:9092
+    expose:
+      - 9092
+    network_mode: "host"
+    hostname: localhost
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_ADVERTISED_HOST_NAME: localhost
+      KAFKA_ZOOKEEPER_CONNECT: localhost:2181
+      KAFKA_MESSAGE_MAX_BYTES: 1000000000
+
+  patientservice:
+    build: PatientService/
+    image: patientservice
+    network_mode: host
+    depends_on:
+      [mongo]
+    ports:
+      - 8080:8080
+    expose:
+      - 8080
+
+  schedulerservice:
+    build: SchedulerService/
+    image: schedulerservice
+    network_mode: host
+    ports:
+      - 8086:8086
+    expose:
+      - 8086
+
+  authenticationservice:
+    build: AuthenticationService/
+    image: authenticationservice
+    network_mode: host
+    depends_on:
+      [mysqldb]
+    ports:
+      - 8081:8081
+    expose:
+      - 8081
+
+
+  bookappointmentservice:
+    build: BookAppointmentService/
+    image: bookappointmentservice
+    network_mode: host
+    depends_on:
+      [mongo]
+    ports:
+      - 8084:8084
+    expose:
+      - 8084
+
+
+  mongo:
+    image: mongo:3.4-xenial
+    restart: always
+    network_mode: host
+    environment:
+      MONGO_INITDB_DATABASE: patientdb
+    ports:
+      - 27017:27017
+    expose:
+      - 27017
+    hostname: localhost
+    volumes:
+      ['$HOME/data:/data/db']
+
+  mysqldb:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: logindb
+      MYSQL_USER: root
+#      MYSQL_ALLOW_EMPTY_PASSWORD: "YES"
+
+    volumes:
+      - $HOME/data/datasql:/var/lib/mysql
+    network_mode: "host"
+    hostname: localhost
+    restart: always
+
+  doctorservice:
+    build: DoctorService/
+    image: doctorservice
+    network_mode: host
+    depends_on:
+      [mongo]
+    ports:
+      - 8082:8082
+    expose:
+      - 8082
+
+  recommendationservice:
+    build: RecommendationService/
+    restart: always
+    network_mode: host
+    ports:
+      - 8088:8088
+    expose:
+      - 8088
+
+  neo4j:
+    image: neo4j:latest
+    restart: always
+    network_mode: host
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    expose:
+      - 7474
+    volumes:
+      - $PWD/neo4j-data:/data
+      - $PWD/neo4j-plugins:/plugins
+      - $PWD/neo4j-ext:/var/lib/neo4j/extension

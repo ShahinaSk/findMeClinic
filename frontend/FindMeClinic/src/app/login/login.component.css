@@ -1,0 +1,139 @@
+.navbar-brand{
+  font-family:'Pacifico';
+  font-size:20px;
+
+}
+nav{
+  background:white;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  position: fixed;
+}
+
+.container{
+  height: 90%;
+  margin-top:20px;
+  align-content: center;
+  
+  }
+  .loginBackground{
+    height: 100%;
+    align-content: center;
+    background: #eff5f8
+  }
+  
+  .card{
+  height: 280px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 400px;
+  background-color: white;
+  }
+  
+  .social_icon span{
+  font-size: 60px;
+  margin-left: 10px;
+  color: #144249;
+  }
+  
+  .social_icon span:hover{
+  color: white;
+  cursor: pointer;
+  }
+  
+  .card-header h3{
+  color:#2fd5f8;
+  }
+  
+  .social_icon{
+  position: absolute;
+  right: 20px;
+  top: -45px;
+  }
+  
+  .input-group-prepend span{
+  width: 50px;
+  background-color: #ebeff0;
+  color: black;
+  border:0 !important;
+  }
+  
+  input:focus{
+  outline: 1 0 0 0  !important;
+  box-shadow: 2 0 0 0 !important;
+  
+  }
+  
+  .remember{
+  color: white;
+  }
+  
+  .remember input
+  {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+  }
+  
+  .login_btn{
+  color: white;
+  background-color:#2fd5f8;
+  width: 100px;
+  }
+  
+  .login_btn:hover{
+  color: black;
+  background-color: white;
+  }
+  
+  .links{
+  color:black;
+  }
+  
+  .links a{
+  margin-left: 4px;
+  color:#2fd5f8;
+
+  }
+  .links a:hover{
+  
+    text-decoration: underline;
+  
+    }
+    .row {
+      margin-right: -15px;
+      margin-left: -15px;
+      margin-bottom: 15px;
+  }
+  
+h2{
+color: #2fd5f8;
+}  
+
+.register{
+  margin-right: 10px;
+  margin-top: 5px;
+  background: #2fd5f8;
+  color: #fff;
+}
+
+.registration {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.btn-register {
+  background: #2fd5f8;
+  color: #fff;
+  height: 40px;
+  padding-bottom: 35px;
+  margin-top:20px;
+}
+
+.btn-register:hover{
+  color: black;
+  background-color: white;
+  font-weight: 400
+  }

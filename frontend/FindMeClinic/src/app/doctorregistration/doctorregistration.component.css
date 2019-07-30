@@ -1,0 +1,120 @@
+.example-card
+{
+ background-color:#eff5f8;
+ position: relative;
+ font-size: 14px;
+}
+mat-button-toggle
+{
+ height: 180px;
+ width: 180px;
+}
+.content
+{
+     text-align: center;
+     width: 60%;
+    margin-left: 20%;
+}
+/* Remove extra left and right margins, due to padding */
+.row
+{
+ margin: 8 -5px;
+}
+/* Clear floats after the columns */
+.row:after
+{
+     content: "";
+     display: table;
+     clear: both;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px)
+{
+.column
+{
+       width: 100%;
+       display: block;
+       margin-bottom: 20px;
+}
+}
+/* Style the counter cards */
+.card
+{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     padding: 10px;
+     text-align: center;
+     background-color:white;
+     width:400px;
+}
+.align
+{
+   padding-right: 77%;
+}
+.alignment
+{
+     padding-right: 24%;
+}
+.alignments
+{
+     padding-right: -15%;
+}
+.alignmentt
+{
+   padding-right: 36%;
+}
+
+.alignmentts
+{
+   padding-right: 34%;
+}
+
+.aligns
+{
+   padding-left: 18%;
+}
+.inputs
+{
+padding-left: 50%;
+}
+table
+{
+   text-align: center;
+   margin-left: 30%;
+}
+forms
+{
+padding-left: 80%;
+}
+input[pw-show-hide] + span
+{
+cursor: pointer;
+display: inline-block;
+margin-left: .5ch;
+text-transform: uppercase;
+width: 4.5ch;
+text-align: left;
+line-height: 1;
+vertical-align: middle;
+}
+.gender
+{
+padding-right: 35px;
+}
+button
+{
+ background-color:#2fd5f8;
+ color: white;
+ width: 100px;
+ margin-right:50px;
+ padding-left: 12px;
+ padding-right: 12px;
+ padding-bottom: 4px;
+ padding-top: 4px
+}
+button:hover
+{
+ color: black;
+ background-color: white;
+ font-weight: 400;
+}
+

@@ -1,0 +1,105 @@
+{
+"patientAppointmentDetails": [
+  {
+    "doctorName":"arjun reddy",
+    "clinicName":"apollo",
+    "dateAndTime":" Jul 18, 2019, 9:44:12 PM",
+    "address":"vizag"
+  },
+  {
+    "doctorName":"santhu",
+    "clinicName":"apollo",
+    "dateAndTime":"May 6, 2019, 9:44:12 PM",
+    "address":"vizag"
+  },
+  {
+    "doctorName":"vijay",
+    "clinicName":"apollo",
+    "dateAndTime":"Jul 16, 2019, 9:44:12 PM",
+    "address":"vizag"
+  },
+  {
+    "doctorName":"varma",
+    "clinicName":"apollo",
+    "dateAndTime":"Jul 15, 2019, 9:44:12 PM",
+    "address":"vizag"
+  },
+  {
+    "doctorName":"sunitha",
+    "clinicName":"apollo",
+    "dateAndTime":"Jan 15, 2019, 9:44:12 PM",
+    "address":"vizag"
+  }
+],
+"patientProfile":[
+  {
+    "name":"sunitha",
+    "emailId":"sunithaVarma@gmail.com",
+    "dateOfBirth":"1/10/1996",
+    "gender":"female",
+    "mobile":"9988998899"
+  }
+],
+"doctorAppointmentDetails" : [
+  {
+    "patientName":"Lohitha",
+    "clinicName":"appolo",
+    "dateAndTime":"Jul 15, 2019, 9:44:12 PM",
+    "emailId":"lohilohitha987@gmail.com",
+    "dateOfBirth":"05/12/1996",
+    "gender":"Female",
+    "mobile":"9988998999"
+  },
+  {
+    "patientName":"Shailu",
+    "clinicName":"appolo",
+    "dateAndTime":"Jul 1, 2019, 9:44:12 PM",
+    "emailId":"lohilohitha987@gmail.com",
+    "dateOfBirth":"05/12/1996",
+    "gender":"Male",
+    "mobile":"9988998999"
+    },
+    {
+      "patientName":"Leela",
+      "clinicName":"appolo",
+      "dateAndTime":"Jul 24, 2018, 9:44:12 PM",
+      "emailId":"lohilohitha987@gmail.com",
+      "dateOfBirth":"05/12/1996",
+      "gender":"female",
+      "mobile":"9988998999"
+    }
+ ],
+ "doctors": [
+  {
+    "emailId":"khannaashish@gmail.com",
+    "role":"doctor",
+    "name": "Ashish Khanna",
+    "gender": "Male",
+    "phone":"9618965349",
+    "medicalLicense":"MP400",
+    "qualification":"MBBS, MS",
+    "specialization": "Opthalmologist",
+    "practiceStartedDate":"2014-06-17",
+    "clinicName": "Regency Clinic",
+    "address":{
+      "state":"New Delhi",
+      "city":"Delhi",
+      "address":"21/56 Block 1",
+      "area":"Preet vihar",
+      "pinCode":"110025"
+    } ,
+    "photoPath": "assets/images/d1.jpg"
+ 
+  }
+ ],
+"comments": [
+  {
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }
+],
+"profile": {
+  "name": "typicode"
+}
+}

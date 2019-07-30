@@ -1,0 +1,57 @@
+<app-navbar></app-navbar>
+<body>
+<div class="container">
+
+  
+  <mat-toolbar class="toolbar">Doctor's Profile</mat-toolbar>
+        <mat-card class="cards">  
+          <div class="row">
+              <div class="col">
+                  <img class="imageClass" [src]="doctor.photoPath" />
+              </div>
+              <div class="col">
+                  <p>Name :</p>
+                  <p>Gender :</p>
+                  <p>Email :</p>
+                  <!-- <p>Contact No. :</p> -->
+                  <p>Medical License No. :</p>
+                  <!-- <p>Qualification :</p> -->
+                  <p>Specialization :</p>
+                  <p>Experience :</p>
+                  <p>Clinic Name :</p>
+                  <p>Address :</p>
+                 <br>
+                 <br>
+                 <br>
+                 
+              </div>
+              <div class="col">
+                <p>{{doctor.name}}</p>
+                <p>{{doctor.gender}}</p>
+                <p>{{doctor.emailId}}</p>
+                <!-- <p>{{doctor.phone}}</p> -->
+                <p>{{doctor.medicalLicense}}</p>
+                <!-- <p>{{doctor.qualification}}</p> -->
+                <p>{{doctor.specialization}}</p>
+                <p>{{getExp(doctor.practiceStartedDate  | date: 'yyyy/MM/dd')}}</p>
+                <p>{{doctor.clinicName}}</p>
+                <p>{{doctor.address.address}}, {{doctor.address.area}}</p>
+                <p>{{doctor.address.city}}, {{doctor.address.state}}</p>
+                <p>{{doctor.address.pinCode}}</p>
+              
+                <p>
+              
+                    <mat-card-actions class="button"  >
+                      <button mat-raised-button >Book Appointment</button>
+                    </mat-card-actions>
+              
+                </p>
+                
+              </div>
+          </div>
+         
+        </mat-card>
+
+</div> 
+</body>
+<app-footer></app-footer>

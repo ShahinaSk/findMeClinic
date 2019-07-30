@@ -1,0 +1,78 @@
+<br>
+<mat-accordion class="myPanel">
+   <mat-expansion-panel [expanded]="true">
+     <mat-expansion-panel-header>
+       <mat-panel-title class="title">
+         Upcoming Appontment Details
+       </mat-panel-title>
+     </mat-expansion-panel-header>
+     <mat-card class="cardList">
+
+       <div *ngFor="let appointmentDetails of upcomingAppointmentData">
+         <mat-card class="upcomingDataCard">
+           <mat-card-content>
+             <div class="row">
+
+               <div class="col">
+                 <p>Doctor's Name:</p>
+                 <p>Clinic's Name:</p>
+                 <p>Date and Time :</p>
+                 <p>Address :</p>
+               </div>
+               <div class="col">
+                 <p>{{appointmentDetails.doctorName}}</p>
+                 <p>{{appointmentDetails.clinicName}}</p>
+                 <p>{{appointmentDetails.dateAndTime}}</p>
+                 <p>{{appointmentDetails.address}}</p>
+
+               </div>
+             </div>
+           </mat-card-content>
+         </mat-card><br>
+       </div>
+
+
+     </mat-card>
+
+
+   </mat-expansion-panel>
+ </mat-accordion>
+ <br>
+ <mat-accordion class="myPanel">
+   <mat-expansion-panel [expanded]="true">
+     <mat-expansion-panel-header>
+       <mat-panel-title>
+         Previous Appontment Details
+       </mat-panel-title>
+     </mat-expansion-panel-header>
+     <mat-card class="cardList">
+
+       <div *ngFor="let appointmentDetails1 of previousAppointmentData">
+         <mat-card class="previousDataCard">
+           <mat-card-content>
+             <div class="row">
+
+               <div class="col">
+                 <p>Doctor's Name:</p>
+                 <p>Clinic's Name:</p>
+                 <p>Date and Time :</p>
+                 <p>Address :</p>
+               </div>
+               <div class="col">
+                 <p>{{appointmentDetails1.doctorName}}</p>
+                 <p>{{appointmentDetails1.clinicName}}</p>
+                 <p>{{appointmentDetails1.dateAndTime}}</p>
+                 <p>{{appointmentDetails1.address}}</p>
+
+               </div>
+             </div>
+           </mat-card-content>
+         </mat-card><br>
+       </div>
+
+
+     </mat-card>
+
+
+   </mat-expansion-panel>
+ </mat-accordion>

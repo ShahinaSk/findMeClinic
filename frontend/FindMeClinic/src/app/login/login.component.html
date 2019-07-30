@@ -1,0 +1,62 @@
+
+<a href="http://localhost:4200/#" class="navbar-brand ml-3" style="color:rgb(33, 173, 228)">
+  <img src="../../assets/images/logo (1).png" style="height: 60px;width: auto;margin-left: 210px;margin-top:12px;" alt ="FindMeClinic"/>
+</a>
+   <div class="loginBackground">
+  <div class="container">
+      <div class="d-flex justify-content-center h-100">
+        <div class="card">
+          <div class="card-header">
+            <h3>Login</h3>
+            <!-- <div class="d-flex justify-content-end social_icon">
+              <span><i class="fab fa-facebook-square"></i></span>
+              <span><i class="fab fa-google-plus-square"></i></span>
+              <span><i class="fab fa-twitter-square"></i></span>
+            </div> -->
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="text" class="form-control" #username placeholder="username">
+                
+              </div>
+              <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-key"></i></span>
+                </div>
+                <input type="password" class="form-control" #password placeholder="password">
+              </div>
+              <div class="form-group">
+                <!-- <input type="button" value="Login" class="btn float-right login_btn" (click)="authenticate(username.value,password.value)"> -->
+                <div class="btn  float-right btn-info btn-md btn-register" (click)="authenticate(username.value,password.value)">Login</div>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="card-footer">
+            <div class="d-flex justify-content-center links">
+              Don't have an account?<a (click)="openTabbedView()">Register Here</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container registration">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-9">   
+        <h2 class="awsm-head">Are your new here?</h2>
+        <p> Register with us to explore more features.</p>
+
+        <div class="btn btn-info btn-md btn-register" (click)="sendRole()" style="margin-right: 10px">Register as Patient</div>
+        <div class="btn btn-info btn-md btn-register" (click)="sendRole1()">Register as Doctor</div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-3">
+        <img src="https://findmeclinic.com/images/register1.png">
+    </div>
+</div>
+</div>
+    <app-footer></app-footer>
+   

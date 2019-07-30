@@ -1,0 +1,67 @@
+<mat-accordion class="myPanel">
+    <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title class="title">
+        <b><b>Upcoming Appointment Details</b></b>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-card class="cardList">
+  
+        <div *ngFor="let upcomingDetails of upcomingAppointmentData">
+          <mat-card class="upcomingDataCard">
+            <mat-card-content>
+              <div class="row">
+  
+                <div class="col">
+                  <p>Patient Name:{{upcomingDetails.patientName}}</p>
+                  <p>Clinic's Name:{{upcomingDetails.clinicName}}</p>
+                  <p>Date and Time :{{upcomingDetails.dateAndTime}}</p>
+                  <p>Email Id :{{upcomingDetails.emailId}}</p>
+                  <p>Date of Birth:{{upcomingDetails.dateOfBirth}}</p>
+                  <p>Gender:{{upcomingDetails.gender}}</p>
+                  <p>Mobile:{{upcomingDetails.mobile}}</p>
+                </div>
+              </div>
+            </mat-card-content>
+          </mat-card><br>
+        </div>
+  
+  
+      </mat-card>
+  
+  
+    </mat-expansion-panel>
+  </mat-accordion>
+  
+  <mat-accordion class="myPanel">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+         <b>Previous Appointment Details</b> 
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-card class="cardList">
+  
+        <div *ngFor="let previousDetails of previousAppointmentData">
+          <mat-card class="previousDataCard">
+            <mat-card-content>
+              <div class="row">
+  
+                <div class="col">
+                  <p>Patient Name:{{previousDetails.patientName}}</p>
+                  <p>Clinic's Name:{{previousDetails.clinicName}}</p>
+                  <p>Date and Time :{{previousDetails.dateAndTime}}</p>
+                  <p>Email Id :{{previousDetails.emailId}}</p>
+                  <p>Date of Birth:{{previousDetails.dateOfBirth}}</p>
+                  <p>Gender:{{previousDetails.gender}}</p>
+                  <p>Mobile:{{previousDetails.mobile}}</p>
+                </div>
+              </div>
+            </mat-card-content>
+          </mat-card><br>
+        </div>
+  
+      </mat-card>
+  
+    </mat-expansion-panel>
+  </mat-accordion>

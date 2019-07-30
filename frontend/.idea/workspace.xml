@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="04e23f9d-5e46-4e08-93d8-8191742c5548" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AuthenticationService/src/main/java/com/stackroute/domain/DoctorAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AuthenticationService/src/main/java/com/stackroute/domain/PatientAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AuthenticationService/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/config/CorsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/config/ProducerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/controller/BookAppointmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/domain/BookAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/domain/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/domain/DoctorAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/domain/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/domain/PatientAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/domain/Slot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/repository/BookAppointmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/service/BookAppointmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/java/com/stackroute/service/BookAppointmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BookAppointmentService/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/config/ConsumerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/config/ProducerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/domain/BookAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/domain/DoctorAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/domain/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/domain/PatientAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DoctorService/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/config/ConsumerConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/domain/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/domain/BookAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/domain/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/domain/DoctorAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/domain/PatientAppointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/domain/Slot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PatientService/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SchedulerService/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SchedulerService/src/main/java/com/stackroute/config/CorsConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SchedulerService/src/main/java/com/stackroute/config/RedisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SchedulerService/src/main/java/com/stackroute/controller/SchedulerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SchedulerService/src/main/java/com/stackroute/domain/Scheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SchedulerService/src/main/java/com/stackroute/repository/ScheduleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SchedulerService/src/main/java/com/stackroute/service/SchedulerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SchedulerService/src/main/java/com/stackroute/service/SchedulerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SchedulerService/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zuul-api/src/main/java/com/stackroute/zuulapi/filters/ErrorFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zuul-api/src/main/java/com/stackroute/zuulapi/filters/PostFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zuul-api/src/main/java/com/stackroute/zuulapi/filters/PreFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zuul-api/src/main/java/com/stackroute/zuulapi/filters/RouteFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthenticationService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthenticationService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthenticationService/src/main/java/com/stackroute/domain/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthenticationService/src/main/java/com/stackroute/domain/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthenticationService/src/main/java/com/stackroute/domain/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthenticationService/src/main/java/com/stackroute/domain/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthenticationService/src/main/java/com/stackroute/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthenticationService/src/main/java/com/stackroute/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AuthenticationService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthenticationService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/DoctorSerivceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/DoctorSerivceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/controller/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/controller/DoctorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/domain/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/domain/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/service/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/service/DoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/service/DoctorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorService/src/main/java/com/stackroute/service/DoctorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DoctorService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../DoctorService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/PatientServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/PatientServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/controller/PatientContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/controller/PatientContoller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/domain/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/domain/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/service/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientService/src/main/java/com/stackroute/service/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PatientService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PatientService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/src/main/java/com/stackroute/configserver/ConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/java/com/ConfigServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka-server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eureka-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../eureka-server/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/doctor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/doctor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/doctorregistration/doctorregistration.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/doctorregistration/doctorregistration.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/doctorregistration/doctorregistration.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/doctorregistration/doctorregistration.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/doctorregistration/doctorregistration.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/doctorregistration/doctorregistration.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/footer/footer.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/landingpage/landingpage.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/landingpage/landingpage.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/landingpage/landingpage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/landingpage/landingpage.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/landingpage/landingpage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/landingpage/landingpage.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/my-dialog/my-dialog.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/my-dialog/my-dialog.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/my-dialog/my-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/my-dialog/my-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/my-dialog/my-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/my-dialog/my-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/navbar/navbar.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/navbar/navbar.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patient-registration/patient-registration.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patient-registration/patient-registration.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patient-registration/patient-registration.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patient-registration/patient-registration.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patient-registration/patient-registration.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patient-registration/patient-registration.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patientappointments/patientappointments.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patientappointments/patientappointments.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patientappointments/patientappointments.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patientappointments/patientappointments.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patientappointments/patientappointments.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patientappointments/patientappointments.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patientdashboard.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patientdashboard.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patientdashboard/patientdashboard.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patientdashboard/patientdashboard.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patientdashboard/patientdashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patientdashboard/patientdashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patientdashboard/patientdashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patientdashboard/patientdashboard.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patientprofile/patientprofile.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patientprofile/patientprofile.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patientprofile/patientprofile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patientprofile/patientprofile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/patientprofile/patientprofile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/patientprofile/patientprofile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/popup/popup.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/popup/popup.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/popup/popup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/popup/popup.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/popup/popup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/popup/popup.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/search-doctor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/search-doctor.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/search-doctor/search-doctor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/search-doctor/search-doctor.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/view-doctor/view-doctor.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/view-doctor/view-doctor.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/app/view-doctor/view-doctor.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/app/view-doctor/view-doctor.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FindMeClinic/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/FindMeClinic/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../zuul-api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zuul-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-api/src/main/java/com/stackroute/zuulapi/ZuulApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../zuul-api/src/main/java/com/stackroute/zuulapi/ZuulApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-api/src/main/java/com/stackroute/zuulapi/pre/SimpleFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zuul-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../zuul-api/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="27" />
+    <option name="width" value="767" />
+    <option name="height" value="654" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04e23f9d-5e46-4e08-93d8-8191742c5548" name="Default Changelist" comment="" />
+      <created>1562921631387</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562921631387</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1533" height="875" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2528581" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+</project>

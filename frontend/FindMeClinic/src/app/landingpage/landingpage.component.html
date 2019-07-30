@@ -1,0 +1,196 @@
+<app-navbar></app-navbar>
+
+<br><br><br>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="carousel">
+        <div class="container" style="margin-left: 650px">
+                <div class="d-flex justify-content-center h-80">
+                    <div class="card text-white" style="margin-top:150px;background-color:rgba(7, 7, 7, 0.5)">
+                        <div class="card-header" style="color: #2fd5f8">
+                           <div class="data" style="margin-left: 14%"> <h3>Find NearBy Doctors</h3></div>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="container">
+                                    <div class="row heading heading-icon" style="margin-left: 70px">
+                                   
+                               <div style="color: #2fd5f8"> <h4>Select Location</h4></div>
+                                <div class="butt" style="margin-left: 10%"><form action="/action_page.php">
+                                    <select name="cars" (change)="selectChangeHandler($event)" >
+                                     
+                                      <option *ngFor="let place1 of places" [value]=place1>{{place1}}</option>
+                                    </select>
+                                   
+                                  </form></div>
+                                </div>
+                                </div><br>
+                                <div class="container">
+                                    
+                                <button class="btn btn1" (click)="doctorDetails()">Doctor</button>
+                                <button class="btn btn1" >Clinic</button>
+                                <button class="btn btn1">Pharmacy</button>
+                                <button class="btn btn1">Labs</button>
+                                
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+</div> 
+
+<section class="team-area pt-100 pb-100" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 mx-auto text-center">
+                    <div class="section-title" style="text-align: center">
+                        <h4>Top Doctors </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <img src="http://infinityflamesoft.com/html/xenon-preview/assets/img/team/team1.jpg" alt="">
+                        <div class="team-hover">
+                            
+                            <h4>Name :Amit</h4>
+                            <h6>Specialization :Cardiologist</h6>
+                            <h6>Address :Kormangla</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <img src="http://infinityflamesoft.com/html/xenon-preview/assets/img/team/team2.jpg" alt="">
+                        <div class="team-hover">
+                            <h4>Name :Rohit</h4>
+                            <h6>Specialization :Anesthesiologist</h6>
+                            <h6>Address :Kormangla</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                        <div class="single-team">
+                            <img src="../../assets/images/Doctor.jpeg" alt="" style="width: 300px" style="height: 270px">
+                            <div class="team-hover">
+                                <h4>Name :Ram</h4>
+                                <h6>Specialization :Anesthesiologist</h6>
+                                <h6>Address :HSR Layout</h6>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <img src="http://infinityflamesoft.com/html/xenon-preview/assets/img/team/team3.jpg" alt="">
+                        <div class="team-hover">
+                            <h5>Name :Meghana</h5>
+                            <h6>Specialization :psychiatrist</h6>
+                            <h6>Address :Kormangla</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="team-area " id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 mx-auto text-center">
+                    <div class="section-title">
+                        <h4>Top Clinics </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <img src="../../assets/images/h1.jpeg" style="width: 300px" style="height: 255px" alt="">
+                        <div class="team-hover">
+                            <h4>Clinic Name :Apolo</h4>
+                            <h4>Address :Kormangla</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <img src="../../assets/images/h4.jpeg" style="width: 300px" style="height: 255px" alt="">
+                        <div class="team-hover">
+                            <h4>Clinic Name :MedPlus</h4>
+                            <h4>Address :HSR Layout</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                        <div class="single-team">
+                            <img src="../../assets/images/h3.jpeg" style="width: 300px" style="height: 255px" alt="">
+                            <div class="team-hover">
+                                <h4>Clinic Name :MedPlus</h4>
+                                <h4>Address :HSR Layout</h4>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <img src="../../assets/images/h2.jpeg" style="width: 300px" style="height: 255px" alt="">
+                        <div class="team-hover">
+                            <h4>Clinic Name :Apolo</h4>
+                            <h4>Address :Hebbal</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    <br><br>
+    <div class="container">
+            <div class="card">
+                <div class="container-fliud">
+                    <div class="wrapper row">
+                        <div class="preview col-md-6">
+                            
+                            <div class="preview-pic tab-content">
+                              <div class="tab-pane active" id="pic-1"><img src="https://findmeclinic.com/images/feature/responsive.png" /></div>
+                            </div>
+                                                    
+                        </div>
+                        <div class="details col-md-6">
+                            <h4 class="product-title"  style="color:#2fd5f8">Find Nearby Clinics around you.</h4><br>
+                                  <p>  See nearby clinics in your area and request for online appointment. Only you have to share your location from your browser and you can see nearby clinics and hospitals. You can get online appointment in your favorite clinic.</p>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <div class="container">
+            <div class="card">
+                <div class="container-fliud">
+                    <div class="wrapper row">
+                        <div class="preview col-md-6">
+                            
+                            <div class="preview-pic tab-content">
+                                <h6>Are you a Doctor or own a clinic?</h6>
+                                    <h4 class="product-title"  style="color:#2fd5f8">Register Your Clinic, It's Free.</h4><br>
+                                   
+                                        <li>Add Your Doctors</li>
+                                        <li>Add Clinic Detail</li>
+                                        <li>Manage Patients</li>
+                                        <li>Get Online Appointment Requests</li>
+                                    
+                            </div>                        
+                        </div>
+                        <div class="details col-md-6">
+                          
+                            <div class="tab-pane active" id="pic-1"><img src="https://findmeclinic.com/images/register-vector.png" /></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        
+        
+<app-footer></app-footer>

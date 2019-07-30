@@ -1,0 +1,52 @@
+<!-- <div class="jumbotron">
+  <h1 class="text">Search Nearby Doctors</h1> 
+</div> -->
+<app-navbar></app-navbar>
+<body>
+<div class="container" >
+      
+  <div  *ngFor="let doctor of doctors" >
+   
+   <mat-card class="cards">   <!--material card inserted-->
+     <div class="row">
+         <div class="col">
+             <img class="imageClass" [src]="doctor.photoPath" />
+         </div>
+         <div class="col">
+             <p>Name :</p>
+             <p>Specialization :</p>
+             <p>Clinic Name :</p>
+             <p>Email Id :</p>
+             <p>Address :</p>
+             <!-- <mat-list>
+               <mat-list-item> Pepper </mat-list-item>
+               <mat-list-item> Salt </mat-list-item>
+               <mat-list-item> Paprika </mat-list-item>
+              </mat-list> -->
+         </div>
+         <div class="col">
+           <p>{{doctor.name}}</p>
+           <p>{{doctor.specialization}}</p>
+           <p>{{doctor.clinicName}}</p>
+           <p>{{doctor.emailId}}</p>
+           <p>{{doctor.address.area}}, {{doctor.address.city}}</p>
+           <p class="buttons">
+               
+               <mat-card-actions  class="button"  >
+                   <button mat-raised-button  (click) = "passDetails(doctor)"  >View Profile</button>
+                   <button mat-raised-button (click)="routingto(doctor.emailId)" >Quick Book</button>
+                 </mat-card-actions>
+               
+           </p>
+         </div>
+         
+     </div>
+    
+   </mat-card>
+   <br>
+ </div>
+
+
+</div>
+</body>
+<app-footer></app-footer>

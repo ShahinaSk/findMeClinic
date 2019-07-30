@@ -1,0 +1,17 @@
+button{
+  margin-left: 50px;
+  margin-right: 10px;
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+p{
+  text-align: center;
+}
+.close{
+  display:flex;
+  justify-content: center;
+}

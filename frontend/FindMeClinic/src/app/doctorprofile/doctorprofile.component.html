@@ -1,0 +1,55 @@
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="container" style="margin-top:70px;">
+    <mat-toolbar>My Profile</mat-toolbar>
+          <mat-card class="cards">
+            <div class="row">
+                <!-- <div class="col">
+                               <img class="imageClass" [src]="doctors.profileImage" />
+                </div> -->
+                <div class="col">
+                       <p>Name                :</p>
+                       <p>Gender              :</p>
+                       <p>Email               :</p>
+                       <p>Medical License No. :</p>
+                       <p>Specialization      :</p>
+                       <p>Practice Start Date :</p>
+                        <p>Clinic Name         :</p>
+                       <p>Address             :</p>
+                   <br>
+                   <br>
+                   <br>
+                </div>
+                <div class="col">
+                  <p>{{doctorData.name}}</p>
+                  <p>{{doctorData.gender}}</p>
+                  <p>{{doctorData.emailId}}</p>
+                  <p>{{doctorData.medicalLicense}}</p>
+                  <p>{{doctorData.specialization}}</p>
+                  <p>{{doctorData.practiceStartedDate}}</p>
+                  
+                  <p>{{doctorData.address.state}}, {{doctorData.address.area}}</p>
+                  <p>{{doctorData.address.city}}, {{doctorData.address.state}}</p>
+                  <p>{{doctorData.address.pinCode}}</p>
+                </div>
+<div class="col">
+       <a (click)= "editDoctorProfile()" class="btn btn-primary">
+               <i class="icon-edit icon-white"></i>
+               <span><strong>Edit</strong></span>
+           </a>     
+</div>
+<!--
+<div class="col">
+       <a href="#" class="btn btn-primary">
+               <i class="icon-trash icon-white"></i>
+               <span><strong>Delete</strong></span>            
+           </a>
+</div> -->
+<!--
+</div> -->
+            </div>
+          </mat-card>
+</div>
+<router-outlet></router-outlet>

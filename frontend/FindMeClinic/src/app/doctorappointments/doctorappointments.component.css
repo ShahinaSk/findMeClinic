@@ -1,0 +1,78 @@
+
+mat-expansion-panel {
+    width: 90%;
+    margin:auto;
+    margin-top:3%;
+    background:	rgb(207, 205, 207);
+  }
+  
+  .title{
+    font-weight: 300;
+  }
+    .example-card {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+     
+      
+    }
+  
+    .upcomingDataCard{
+        /* max-width: 500px; */
+        background:rgb(190, 213, 221);
+    }
+    .previousDataCard{
+      background:rgb(190, 213, 221);
+    }
+    
+  
+  
+    .cardList {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+       max-width: 1200px;
+       margin:auto; 
+       margin-top:2%;
+       
+    }
+    /* Column Gap */
+    .cardList > * {
+      box-sizing: border-box;
+    }
+    .cardList > *:not(:last-child) {
+      margin-right: 34px;
+    }
+    /* Item sizing */
+    .cardListItem {
+      flex: 0 1 calc(33.3% - 32px);
+    }
+    /* medium size viewport */
+    
+  @media screen and (max-width: 959px) {
+      /* Column Gap */
+      .cardList > *:not(:last-child) {
+        margin-right: 32px;
+      }
+      /* Item sizing */
+      .cardListItem {
+        flex: 0 1 calc(50% - 32px);
+      }
+    }
+    /* small size viewport */
+    
+  @media screen and (max-width: 599px) {
+      .cardList {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      .cardList > *:not(:last-child) {
+        margin-right: unset;
+        margin-bottom: 32px;
+      }
+    }
+    
+  
+   
